@@ -1,0 +1,16 @@
+{
+    "display": "standalone",
+    "orientation":"portrait",
+    "short_name": "SafeSearch",
+    "name": "SafeSearch",
+    "description": "Search Smart.",
+    "lang": "en-US",
+    "icons": [
+    {
+      "src": "img/icons/icon.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    }
+    ],
+    "start_url": "index.html?launcher=true",
+    }
