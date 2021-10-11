@@ -17,6 +17,5 @@
       "type": "image/png"
     }
     ],
-    "scope": "/",
-    "start_url": "/"
+    "start_url": "/safesearch"
 }
