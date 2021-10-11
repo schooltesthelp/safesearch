@@ -17,5 +17,6 @@
       "type": "image/png"
     }
     ],
+    "scope": "/",
     "start_url": "/"
 }
