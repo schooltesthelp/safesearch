@@ -40,7 +40,10 @@
                   'https://unpkg.com/@ungap/custom-elements-builtin',
                   'https://unpkg.com/x-frame-bypass',
                   'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js',
-                  'https://fonts.googleapis.com/icon?family=Material+Icons'       
+                  'https://fonts.googleapis.com/icon?family=Material+Icons',
+                  'https://schooltesthelp.000webhostapp.com/x-frame.php',
+                  'https://schooltesthelp.000webhostapp.com/findcert.php',
+                  'https://schooltesthelp.000webhostapp.com/exists.php'
                     ]);
                     })
                     );
