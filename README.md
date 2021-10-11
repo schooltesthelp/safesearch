@@ -1,2 +1,2 @@
 # SafeSearch PWA
-Search Safe, and Search Smart. And now as a app. SafeSearch 2.0 is here.
+Search Safe, and Search Smart. And now as a app, offline. SafeSearch 2.0 is here.
