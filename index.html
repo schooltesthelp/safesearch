@@ -406,10 +406,7 @@ window.onclick = function(event) {
 		var intervalID = window.setInterval(myCallback, 500);
 
 	function myCallback() {
-  		if (navigator.onLine) {
-  			
-		} else {
-  			document.body.innerHTML = ` <html>
+  			window.addEventListener('online', () => {document.body.innerHTML = ` <html>
 
 <head>
 <title>T-Rex Game</title>
@@ -3024,7 +3021,8 @@ html[subframe] body {
 
 </html>
 `;
-	}}
+	});
+	}
 	
 	</script>
 	<script>
