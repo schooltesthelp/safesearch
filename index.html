@@ -412,7 +412,23 @@ window.onclick = function(event) {
 		    setTimeout(function() {
 			var pagetoview = "https://cors-anywhere.herokuapp.com/https://" + link.split(":")[2].split("/")[2];
     			function reqListener () {
-				document.getElementById("iframe-holder").innerHTML = '<pre style="word-wrap: break-word; white-space: pre-wrap;">' + this.responseText + "</pre>";
+				function escapeHtml(text) {
+  var map = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#039;'
+  };
+
+  return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+}
+				document.getElementById("iframe-holder").innerHTML = '<pre style="word-wrap: break-word; white-space: pre-wrap;">' + escapeHtml(this.responseText) + "</pre>";
+				
+				
+				
+				
+				
 		    	}
 
 		    var oReq = new XMLHttpRequest();
