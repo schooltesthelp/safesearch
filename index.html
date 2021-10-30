@@ -409,7 +409,7 @@ window.onclick = function(event) {
 	  if (link.includes("view-source:") == true) {
 		    document.getElementById("iframe-holder").innerHTML = "<h1>View Source Activated</h1><br>You are viewing the source of a page. Make sure that the url after has https:// after it.";
 		    setTimeout(function() {
-			var pagetoview = "https://" + link.split(":")[2].split("/")[2];
+			var pagetoview = "https://cors-anywhere.herokuapp.com/https://" + link.split(":")[2].split("/")[2];
     			function reqListener () {
 				document.getElementById("iframe-holder").innerHTML = '<pre style="word-wrap: break-word; white-space: pre-wrap;">' + this.responseText + "</pre>";
 		    	}
