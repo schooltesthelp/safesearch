@@ -405,6 +405,22 @@ window.onclick = function(event) {
     var raw1;
     var raw2;
     var raw;
+	  
+	  if (link.includes("view-source:") == true) {
+		    document.getElementById("iframe-holder").innerHTML = "<h1>View Source Activated</h1><br>You are viewing the source of a page. Make sure that the url after has https:// after it.";
+		    setTimeout(function() {
+			var pagetoview = "https://" + link.split(":")[2].split("/")[2];
+    			function reqListener () {
+				document.getElementById("iframe-holder").innerHTML = '<pre style="word-wrap: break-word; white-space: pre-wrap;">' + this.responseText + "</pre>";
+		    	}
+
+		    var oReq = new XMLHttpRequest();
+                    oReq.addEventListener("load", reqListener);
+		    oReq.open("GET", pagetoview);
+                    oReq.send();
+		    }, (3 * 1000));
+		    
+	  } else {
 	  if (link.includes("https://") == true) {
 		link = document.getElementById("url").value;
 		raw1 = link;
@@ -477,6 +493,7 @@ fetch('https://schooltesthelp.000webhostapp.com/x-frame.php?link=' + link)
 	
 	}
   });
+	}
 	</script>
 	<script>
 		/* When the user clicks on the button,
